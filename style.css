@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("src/fonts/gothampro.ttf");
+  font-weight: 400;
+}
+body {
+  background-color: #FFD1AC;
+}
+
+body,
+header,
+.banner {
+  padding: 0;
+  margin: 0;
+}
+
+.motto {
+  background-color: #F19D2F;
+  font-family: "Gotham Pro";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  width: 100vw;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #2C2B31;
+}
+
+.logo {
+  background-color: #FFD1AC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Gotham Pro";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+.logo .logotype {
+  margin-top: 1em;
+}
+.logo .logo__text {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.banner {
+  height: 280px;
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  position: relative;
+}
+.banner .limited-offer,
+.banner .price {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #F19D2F;
+  color: #FFFFFF;
+  border-radius: 7.1px;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 103px;
+  height: 58px;
+}
+.banner__text {
+  font-family: "Gotham Pro";
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0em;
+}
+.banner #timer #base-timer-label {
+  font-family: "Gotham Pro";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+.banner .limited-offer {
+  left: 20px;
+}
+.banner .price {
+  right: 20px;
+  background-color: #37D997;
+}
+.banner .price #price__previous {
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-decoration: line-through 3.51px;
+  text-decoration-color: #E27500;
+}
+.banner .price #price__current {
+  font-family: "Gotham Pro";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+.main {
+  background-color: rgb(236, 236, 236);
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 20px;
+}
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.main__header .rating,
+.main__header .best-selling {
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+.main__header .best-selling {
+  color: #37D997;
+}
+.main .product__name {
+  font-family: "Gotham Pro";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+.main #photo__big {
+  max-width: 100%;
+}
+.main #photo__small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.main .delivery {
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+.main .delivery .bold-text {
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+.main .stars {
+  display: flex;
+  align-items: center;
+}
+.main .stars__count {
+  margin-left: 0.5em;
+}
+.main .order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.main .order p {
+  font-family: "Gotham Pro";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main .order option,
+.main .order select {
+  font-family: "Gotham Pro";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  background-color: #FFFFFF;
+  border-radius: 7.1px;
+  width: 40vw;
+  text-align: center;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.main .btn {
+  width: 90%;
+  background-color: #37D997;
+  border-radius: 7.1px;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.main .btn__BUY {
+  font-family: "Gotham Pro";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

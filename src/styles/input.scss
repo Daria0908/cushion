@@ -1,0 +1,192 @@
+@import 'mixins';
+@import 'colors';
+@import 'fonts';
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url("src/fonts/gothampro.ttf");
+    font-weight: 400;
+}
+
+body {
+    background-color: $peach;
+}
+
+body,
+header,
+.banner {
+    padding: 0;
+    margin: 0;
+}
+
+.motto {
+    background-color: $orange;
+    @include gotham-400-13;
+    width: 100vw;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: $black;
+}
+
+.logo {
+    background-color: $peach;
+    @include d-f-center-center-column;
+    @include gotham-400-13;
+
+    .logotype {
+        margin-top: 1em;
+    }
+
+    .logo__text {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+}
+
+.banner {
+    height: 280px;
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    position: relative;
+
+    .limited-offer,
+    .price {
+        position: absolute;
+        bottom: 20px;
+
+        @include d-f-center-space-around-column;
+        background-color: $orange;
+        color: $white;
+        border-radius: 7.1px;
+        padding: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 103px;
+        height: 58px;
+
+    }
+
+    &__text {
+        @include gotham-700-11;
+    }
+
+    #timer {
+        #base-timer-label {
+            @include gotham-700-22;
+        }
+    }
+
+    .limited-offer {
+        left: 20px;
+    }
+
+    .price {
+        right: 20px;
+        background-color: $green;
+
+        #price__previous {
+            @include gotham-700-18;
+            text-decoration: line-through 3.51px;
+            text-decoration-color: $dark-orange;
+        }
+
+        #price__current {
+            @include gotham-700-22;
+            margin: 0;
+        }
+    }
+}
+
+.main {
+    background-color: rgb(236, 236, 236);
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 20px;
+
+    &__header {
+        @include d-f-center-space-between-row;
+
+        .rating,
+        .best-selling {
+            @include gotham-400-12;
+        }
+
+        .best-selling {
+            color: $green;
+        }
+    }
+
+    .product__name {
+        @include gotham-700-19;
+    }
+
+    #photo__big {
+        max-width: 100%;
+    }
+
+    #photo__small {
+        @include d-f-center-space-between-row;
+        margin-top: 0.5em;
+    }
+
+    .delivery {
+        @include gotham-400-15;
+
+        .bold-text {
+            @include gotham-700-15;
+        }
+    }
+
+    .stars {
+        @include d-f-align-items-center;
+
+        &__count {
+            margin-left: 0.5em;
+        }
+    }
+
+    .order {
+        @include d-f-center-space-between-row;
+
+        p {
+            @include gotham-400-10;
+            text-align: center;
+        }
+
+        option,
+        select {
+            @include gotham-700-22;
+            background-color: $white;
+            border-radius: 7.1px;
+            width: 40vw;
+            text-align: center;
+            padding: 1em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    }
+
+    .btn {
+        width: 90%;
+        background-color: $green;
+        border-radius: 7.1px;
+        padding: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-top: 1em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        &__BUY {
+            @include gotham-400-30;
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+
+        }
+    }
+
+}
